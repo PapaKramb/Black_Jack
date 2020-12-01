@@ -10,7 +10,7 @@ class Deck
   end
 
   def shuffle!
-    @cards.shuffle
+    @cards.shuffle!
   end
 
   def fill_deck
@@ -21,6 +21,7 @@ class Deck
       Card::PICTURES.each do |value|
         @cards << Card.new(suit, value)
       end
+    end
   end
 
   def reset_deck
